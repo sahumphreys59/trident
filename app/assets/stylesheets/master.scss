@@ -12,6 +12,10 @@ body {
   background: image_url('texture.jpeg');  
 }
 
+.image {
+	padding-right: 450px;
+}
+
 .hero {
 	background: image_url('computer.jpg');
 	height: 400px;
@@ -22,7 +26,6 @@ body {
 .btn {
   border-radius: 0;
 }
-
 
 .frosty {
   background: rgba(0, 0, 0, 0.5);
@@ -63,8 +66,24 @@ body {
 	color: black;
 }
 
+.services {
+	color: white;
+	margin-left: 80px;
+}
 
+.services h3, p {
+	color: white;
+}
 
+.hr {
+	color: white;
+}
+
+.news {
+	color: white;
+	margin-left: 80px;
+
+}
 
 
 
