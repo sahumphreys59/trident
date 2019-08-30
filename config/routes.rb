@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 	get '/news' => 'pages#news'
 	get '/aboutUs' => 'pages#aboutUs'
 	get '/contact' => 'pages#contact'
+	get '/mainframeServices' => 'pages#mainframeServices'
+	get '/maintenaceSupport' => 'pages#maintenaceSupport'
+	get '/systemSupport' => 'pages#systemSupport'
+	get '/ftpSupport' => 'pages#ftpSupport'
 
 
 end

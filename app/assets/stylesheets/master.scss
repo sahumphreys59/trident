@@ -2,12 +2,13 @@
 
 body {
 	background: image_url('ep_naturalblack.png');
-	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-family: "Helvetica Neue", Helvetica;
+  color: white;
 }
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 500;
+  font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('texture.jpeg');  
 }
@@ -47,19 +48,19 @@ body {
 	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: rgba(255,255,255,0.5);
+  background: rgba(0, 0, 255, 0.3);
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .help {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  color: black;
+  color: white;
 }
 
 .news {
@@ -81,10 +82,18 @@ body {
 
 .news {
 	color: white;
-	margin-left: 80px;
-
 }
 
+
+.postion {
+  float: right;
+}
+
+.software {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+}
 
 
 

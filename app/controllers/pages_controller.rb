@@ -21,4 +21,16 @@ class PagesController < ApplicationController
 	def contact
 	end	
 
+	def mainframeServices
+	end	
+
+	def manintenaceSupport
+	end	
+
+	def systemSupport
+	end
+	
+	def ftpSupport
+	end		
+
 end
