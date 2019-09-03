@@ -33,4 +33,7 @@ class PagesController < ApplicationController
 	def ftpSupport
 	end		
 
+	def careers
+	end	
+
 end

@@ -11,6 +11,8 @@
 
   <body>
 
+    <div id="flex-content-container">
+
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 
     <div class="image">
@@ -50,5 +52,30 @@
 
 
     <%= yield %>
+  </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-3">
+            <%= link_to 'Get Help', support_path %>
+            <br/>
+            <%= link_to 'Careers', careers_path %>
+            <br />
+            <%= link_to 'Contact', contact_path %>
+          </div>  
+
+          <div class="col-12 col-sm-3">
+            <span class="fa fa-facebook-square fa-2x social-button"></span>
+            <span class="fa fa-twitter-square fa-2x social-button"></span>
+            <span class="fa fa-linkedin fa-2x social-button"></span>
+          </div>
+        </div>  
+      </div>
+
+       
+
+
+    </div>
   </body>
 </html>

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	get '/maintenaceSupport' => 'pages#maintenaceSupport'
 	get '/systemSupport' => 'pages#systemSupport'
 	get '/ftpSupport' => 'pages#ftpSupport'
+	get '/careers' => 'pages#careers'
 
 
 end
