@@ -8,7 +8,7 @@ body {
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 200;
+  font-weight: 400;
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('texture.jpeg');  
 }
@@ -63,18 +63,16 @@ body {
   color: white;
 }
 
-.news {
-	color: black;
-}
-
 .services {
 	color: white;
 	margin-left: 80px;
 }
 
-.services h3, p {
-	color: white;
+.services h2, h3, p {
+  font-weight: 300;
 }
+
+
 
 .hr {
 	color: white;
@@ -84,15 +82,16 @@ body {
 	color: white;
 }
 
-
 .postion {
   float: right;
 }
 
-.software {
-  color: white;
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 100;
+.software h5, ul {
+  font-weight: 200;
+}
+
+.about h2, h5 {
+  font-weight: 300;
 }
 
 
