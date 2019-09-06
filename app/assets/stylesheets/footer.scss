@@ -18,7 +18,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 100px;
-  background-color: navy;
+  background: image_url('dark-paths.png');
   color: white;
   font-family: "Helvetica Neue", Helvetica;
   padding: 10px 0px;
@@ -32,5 +32,16 @@ body {
 }
 
 .social-button {
-  margin: 4px;
+ 	padding: 10px;
+ 	margin-right: 40px;
+ 	margin-left: 40px;
+}
+
+.footer-link {
+	font-size: 20px;
+}
+
+.align {
+	margin-left: 50px;
+	margin-right: 50px;
 }

@@ -7,6 +7,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="animate.min.css">
+
   </head>
 
   <body>
@@ -15,39 +17,40 @@
 
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 
-    <div class="image">
-      <%= image_tag('trident5.png') %>
+    <div class="pic">
+      <%= link_to image_tag('trident5.png'), root_path %>
     </div>
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item">
-            <%= link_to 'Home', root_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Software', software_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Services', services_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Support', support_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'News', news_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Contact Us', contact_path, class: 'navbar-brand' %>
-          </li>
-        </ul>
-      </div>
+     
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0"> 
+            <li class="nav-item">
+              <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Software', software_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Services', services_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Support', support_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'News', news_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Contact Us', contact_path, class: 'navbar-brand' %>
+            </li>
+          </ul>
+      </div>  
     </nav>
 
 
@@ -55,27 +58,40 @@
   </div>
 
     <div id="footer">
-      <div class="container">
+      <div class="align">
         <div class="row">
-          <div class="col-12 col-sm-3">
-            <%= link_to 'Get Help', support_path %>
+          <div class="col-sm">
+            <%= link_to 'Get Help', support_path, class: 'footer-link' %>
             <br/>
-            <%= link_to 'Careers', careers_path %>
+            <%= link_to 'Careers', careers_path, class: 'footer-link' %>
             <br />
-            <%= link_to 'Contact', contact_path %>
+            <%= link_to 'Contact', contact_path, class: 'footer-link' %>
           </div>  
 
-          <div class="col-12 col-sm-3">
-            <span class="fa fa-facebook-square fa-2x social-button"></span>
-            <span class="fa fa-twitter-square fa-2x social-button"></span>
-            <span class="fa fa-linkedin fa-2x social-button"></span>
+
+          <div class="col-sm">
+            <br/>
+            <a href="https://www.facebook.com/Trident-Services-Inc-324504532327/" target="_blank">
+              <span class="fa fa-facebook-square fa-3x social-button"></span></a>
+            <a href="https://twitter.com/tridentservices?lang=en" target="_blank">
+              <span class="fa fa-twitter-square fa-3x social-button"></span></a>
+            <a href="https://www.linkedin.com/company/trident-services-inc./about/" target="_blank">
+              <span class="fa fa-linkedin fa-3x social-button"></span></a>
           </div>
+
+         
+            <div class="col-sm text-right">
+              <h5>Trident Services Inc.</h5>
+              <p>1260 41st Ave, Suite K
+              <br/>
+              Capitola, CA 95010
+              <br/>
+              Office Tel: (831) 465-7661
+            </div> 
+        
+
         </div>  
       </div>
-
-       
-
-
     </div>
   </body>
 </html>

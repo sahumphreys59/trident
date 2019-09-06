@@ -1,71 +1,80 @@
 <br/>
-<h1>FTP Support</h1>
-<br/>
-<br/>
-<h3>The following are instructions on transfering files such as dumps or screen prints to Trident's FTP site.</h3>
-<br>
-<ol>
-	<li>Start your FTP program and connect to ftp.triserv.com</li>
-	<li>Login using your user ID and password provided by Trident Support</li>
-	<li>Turn on binary transfer mode using the following command: bin</li>
-	<li>You may also want to turn on hash marks so you can see the transfer take place, using the following command: hash</li>
-	<li>Now start the stransfer with the put command as follows:
-			<br/>
-			put your.directory\file.name triserv.file.name
-			<br/>
-			<br/>
-			Use the following file naming conventions:
-			pmrcccc.mmmdd.x.typ
-			<br/>
-			<br/>
-			Where pmrcccc is the problem report number assigned to you, such as PMR0786; 
-			mmmdd is the current date; 
-			<br/>
-			x is only used if sending multiple files, then use A through Z
-			<br/>
-			end with the type of file, use TRS for packed dumps and TXT for any text files.
-	</li>
-</ol>
-<br/>
-<h6>Below is a sample FTP session:</h6>
-<br/>	
+<div class="col-10 offset-1">
+	<h1 align="center">FTP Support</h1>
+	<br/>
+	<br/>
+	<div class="row">
+		<div class="col-12 col-sm">
+			<h3>The following are instructions on transfering files such as dumps or screen prints to Trident's FTP site.</h3>
+			<br>
+			<ol>
+				<li>Start your FTP program and connect to ftp.triserv.com</li>
+				<li>Login using your user ID and password provided by Trident Support</li>
+				<li>Turn on binary transfer mode using the following command: bin</li>
+				<li>You may also want to turn on hash marks so you can see the transfer take place, using the following command: hash</li>
+				<li>Now start the stransfer with the put command as follows:
+						<br/>
+						put your.directory\file.name triserv.file.name
+						<br/>
+						<br/>
+						Use the following file naming conventions:
+						pmrcccc.mmmdd.x.typ
+						<br/>
+						<br/>
+						Where pmrcccc is the problem report number assigned to you, such as PMR0786; 
+						mmmdd is the current date; 
+						<br/>
+						x is only used if sending multiple files, then use A through Z
+						<br/>
+						end with the type of file, use TRS for packed dumps and TXT for any text files.
+				</li>
+			</ol>
+		</div>
 
-<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
-	C:\WINDOWS> ftp ftp.triserv.com
-	<br/>
-	Connected to ftp.triserv.com
-	<br/>
-	220 triserv2.triserv.com FTP server ready. 
-	<br/>
-	User (ftp.triserv.com: (none)): userid 
-	<br/>
-	331 Password required for userid. 
-	<br/>
-	Password:
-	<br/>
-	230 User userid logged in. access restrictions apply. 
-	<br/>
-	ftp> bin
-	<br/>
-	200 Type set to I.
-	<br/>
-	ftp> hash
-	<br/>
-	Hash mark printing On ftp: (2048 bytes/hash mark). 
-	<br/>
-	ftp>put j:\dumps\uji.trs pmr0786.apr15.a.trs
-	<br/>
-	200 PORT command successful.
-	<br/>
-	150 Opening BINARY mode data connection for pmr0786.apr15.a.trs.
-	<br/>
-	#######################################################################
-	<br/>
-	####################################################################### 
-	<br/>
-	226 Transfer complete.
-	<br/>
-	ftp: 429884 bytes sent in 48.33Seconds 8.89Kbytes/sec. 
-	<br/>
-	ftp> bye
-</p>			
+		<div class="col-12 col-sm">
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<h6>Sample FTP session:</h6>
+			<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
+				C:\WINDOWS> ftp ftp.triserv.com
+				<br/>
+				Connected to ftp.triserv.com
+				<br/>
+				220 triserv2.triserv.com FTP server ready. 
+				<br/>
+				User (ftp.triserv.com: (none)): userid 
+				<br/>
+				331 Password required for userid. 
+				<br/>
+				Password:
+				<br/>
+				230 User userid logged in. access restrictions apply. 
+				<br/>
+				ftp> bin
+				<br/>
+				200 Type set to I.
+				<br/>
+				ftp> hash
+				<br/>
+				Hash mark printing On ftp: (2048 bytes/hash mark). 
+				<br/>
+				ftp>put j:\dumps\uji.trs pmr0786.apr15.a.trs
+				<br/>
+				200 PORT command successful.
+				<br/>
+				150 Opening BINARY mode data connection for pmr0786.apr15.a.trs.
+				<br/>
+				#######################################################################
+				<br/>
+				####################################################################### 
+				<br/>
+				226 Transfer complete.
+				<br/>
+				ftp: 429884 bytes sent in 48.33Seconds 8.89Kbytes/sec. 
+				<br/>
+				ftp> bye
+			</p>	
+		</div>		
+</div>		

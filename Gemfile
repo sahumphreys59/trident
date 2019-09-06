@@ -73,8 +73,9 @@ end
 
 gem "font-awesome-rails"
 
+gem "figaro"
 
-
+gem 'google-api-client', require: 'google/apis/calendar_v3'
 
 
 

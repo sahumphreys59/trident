@@ -34,6 +34,7 @@ class PagesController < ApplicationController
 	end		
 
 	def careers
-	end	
+	end
+
 
 end
