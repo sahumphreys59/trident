@@ -18,6 +18,7 @@ body {
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 300;
+  font-size: 22px;
 }
 
 .navbar-nav {
@@ -220,7 +221,7 @@ a {
 }
 
 .contact p, h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .staff h2, h4, ul, li {
@@ -262,6 +263,10 @@ a {
 
 .about h5 {
   font-size: 25px;
+}
+
+.ibm-pic {
+  max-width: 50px;
 }
 
 @charset "UTF-8";
