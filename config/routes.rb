@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 	get '/systemSupport' => 'pages#systemSupport'
 	get '/ftpSupport' => 'pages#ftpSupport'
 	get '/careers' => 'pages#careers'
+	get '/redirect', to: 'events#redirect', as: 'redirect'
+get '/callback', to: 'events#callback', as: 'callback'
+
+
 
 
 end
