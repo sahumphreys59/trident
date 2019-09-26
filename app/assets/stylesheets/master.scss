@@ -1,5 +1,8 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap"');
+@import url('https://fonts.googleapis.com/css?family=Charmonman&display=swap"');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar&display=swap"');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
 
 body {
 	background: image_url('ep_naturalblack.png');
@@ -271,7 +274,7 @@ a {
 }
 
 .beach {
-  background: image_url('chair2.jpeg') center;
+  background: image_url('chair5.jpeg') center bottom;
   height: 500px;
   color: white;
   box-shadow: 0px 3px 8px #2a2a2a;
@@ -279,7 +282,7 @@ a {
 
 .beach h3 {
   font-size: 55px;
-  font-family: 'Courgette', cursive;
+  font-family: 'Handlee', cursive;
   font-weight: 100;
 }
 
@@ -300,6 +303,21 @@ hr {
 .route {
   float: right;
   margin-left: 50px;
+}
+
+.pic {
+  float: right;
+  margin-left: 20px;
+}
+
+.program {
+  float: right;
+  margin-right: 20px;
+}
+
+.man {
+  float: left;
+  margin-left: 20px;
 }
 
 @charset "UTF-8";
