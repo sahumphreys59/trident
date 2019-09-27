@@ -145,6 +145,14 @@ body {
   font-size: 40px;
 }
 
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }  
+}
+
 .software li {
   font-weight: 200;
 }
