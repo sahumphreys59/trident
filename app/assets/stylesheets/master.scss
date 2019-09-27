@@ -30,8 +30,14 @@ body {
 }
 
 .hero {
+  moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
 	background: image_url('computer.jpg') center;
-	height: 500px;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 10px;
 	color: white;
 	box-shadow: 0px 3px 8px #2a2a2a;
 }
@@ -91,6 +97,10 @@ body {
 
 .services h1 {
   font-size: 45px;
+}
+
+.services h2 {
+  font-size: 33px;
 }
 
 .serv p {
@@ -276,9 +286,14 @@ a {
 
 .beach {
   background: image_url('chair5.jpeg') center ;
-  height: 400px;
-  color: white;
   box-shadow: 0px 3px 8px #2a2a2a;
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  border: 1px;
+  border-color: transparent;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .beach h3 {
@@ -328,6 +343,7 @@ hr {
 
 .footer-pics {
   margin: 8px;
+  height: 60px;
 }
 
 
