@@ -401,7 +401,11 @@ hr {
   padding: 10px;
 }
 
-
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 @charset "UTF-8";
 

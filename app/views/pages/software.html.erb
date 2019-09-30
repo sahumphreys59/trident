@@ -72,7 +72,7 @@
 <div class="soft col-10 offset-1 animated zoomIn delay-2s">
 	<u><h1 align="center" class="animated zoomIn delay-2s">Highlights:</h1></u>
 	<br/>
-	<%= image_tag('slide.png', :size => "630x200", :class => "float-right img-fluid ", :alt => "Responsive image")%>
+	<%= image_tag('slide.png', :size => "630x200", :class => "float-right img-fluid clearfix::after", :alt => "Responsive image")%>
 		<h3>Reduces Escalating ISV Costs</h3>
 		<ul>
 			<li>Provides controls to reduce MLC and ISV costs by restricting MLC and ISV(s) to a limited footprint either by Job, or Step Level Routing.</li>
@@ -97,7 +97,7 @@
 					<li>IPL systems when implementing new versions of program products</li>
 				</ul>
 				<br/>
-				<%= image_tag('chargeback.png', :size => '530x100', :class => "float-right img-fluid clearfix", :alt => "Responsive image") %>
+				<%= image_tag('chargeback.png', :size => '530x100', :class => "float-right img-fluid clearfix::after", :alt => "Responsive image") %>
 			<b><li>Simplifies system and data center consolidation</li></b>
 				<p>Reduces the need to retain in-house installation exists thereby allowing users to position systems prior to integrating their workloads. The task of workload integration is hence made much easier as are the processes of system build and rollout.</p>
 			<b><li>Allows dynamic updating</li></b>
@@ -115,7 +115,9 @@
 
 		<h3>Facilitates Achievement of System Throughput and Service Level Targets</h3>
 		<ul>
-			<%= image_tag('Resource Routing Example.jpg', :size => '530x100', :class => "float-right img-fluid clearfix", :alt => "Responsive image") %>
+
+			<%= image_tag('Resource Routing Example.jpg', :size => '530x100', :class => "float-right img-fluid clearfix::after", :alt => "Responsive image") %>
+
 			<b><li>Facilitates Resource Control:</li></b>
 				<p>Optimize utilization of system resources with facilities to improve control over: job and SYSOUT classes, virtual storage, dataspaces, etc. Dynamic job routing can also contribute improving system throughput by ensuring that jobs are executed on the most appropriate system.</p>
 			<b><li>Handles Resource Overruns Automatically:</li></b>
