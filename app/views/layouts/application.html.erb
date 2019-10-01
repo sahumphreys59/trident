@@ -46,6 +46,9 @@
               <li class="nav-item">
                 <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
               </li>
+              <li>
+                <%= link_to 'Careers', careers_path, class: 'navbar-brand' %>
+              </li>  
               <li class="nav-item">
                 <%= link_to 'Contact Us', contact_path, class: 'navbar-brand' %>
               </li> 
@@ -62,18 +65,8 @@
     <div id="footer">
       <div class="align">
         <div class="row">
-          <div class="col-sm">
-            <%= link_to 'Get Help', support_path, class: 'footer-link' %>
-            <br/>
-            <%= link_to 'Careers', careers_path, class: 'footer-link' %>
-            <br />
-            <%= link_to 'Contact', contact_path, class: 'footer-link' %>
-            <br/>
-            <%= link_to 'Services', services_path, class: 'footer-link' %>
-          </div>  
 
-
-          <div class="col-sm">
+          <!-- <div class="col-sm">
             <div align="center">
             <br/>
             <a href="https://www.facebook.com/Trident-Services-Inc-324504532327/" target="_blank">
@@ -83,13 +76,20 @@
             <a href="https://www.linkedin.com/company/trident-services-inc./about/" target="_blank">
               <span class="fa fa-linkedin fa-3x social-button"></span></a>
              </div> 
-          </div>
+          </div> -->
+
+        <div class="col-12 col-sm" align="center">
+          <br/>
+            <span><%= image_tag('ibm2.0.jpg', :class => 'footer-pics')%></span>
+            <span><%= image_tag('bob.jpg', :class => 'footer-pics')%></span>
+            <span><%= image_tag('Destination_z_print.jpg', :class => 'footer-pics') %></span>
+            <span><%= image_tag('gsa_logo.jpg', :class => 'footer-pics') %></span>
+        </div>   
 
          
             <div class="col-sm text-right">
               <h5>Trident Services, Inc.</h5>
-              <p>1260 41st Ave, Suite K
-              <br/>
+              <p>1260 41st Ave, Suite K,
               Capitola, CA 95010
               <br/>
               Office Tel: (831) 465-7661
