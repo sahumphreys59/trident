@@ -387,7 +387,14 @@ hr {
   padding: 10px;
 }
 
+.software {
+  background: image_url('zen.jpeg');
+  background-size: cover;
+}
 
+.software .frosty {
+  background: rgba(0, 0, 0, 0.75);
+}
 
 .beach .frosty {
   background: rgba(0, 0, 0, 0.36)
@@ -396,6 +403,10 @@ hr {
 .tech {
   background: image_url('tech.jpeg');
   background-size: cover;
+}
+
+.osem h1 {
+  font-size: 45px;
 }
 
 @charset "UTF-8";
