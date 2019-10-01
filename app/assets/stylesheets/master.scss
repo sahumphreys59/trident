@@ -298,12 +298,8 @@ a {
 }
 
 .beach {
-  background: image_url('water.jpeg') no-repeat center bottom fixed;
+  background: image_url('horizon.jpg') no-repeat center bottom fixed;
   background-size: cover;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
   border: 1px;
   border-color: transparent;
   margin-bottom: 10px;
@@ -370,14 +366,8 @@ hr {
 
 
 .net {
-  background: image_url('code.jpeg') center;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  border: 1px;
+  background: image_url('numbers.jpeg') center;
   border-color: transparent;
-  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -404,7 +394,8 @@ hr {
 }
 
 .tech {
-  background: #2C6D78;
+  background: image_url('tech.jpeg');
+  background-size: cover;
 }
 
 @charset "UTF-8";
