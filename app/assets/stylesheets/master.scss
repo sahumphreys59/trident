@@ -298,12 +298,11 @@ a {
 }
 
 .beach {
-  background: image_url('horizon.jpg') no-repeat center bottom fixed;
+  background: url('sand.jpeg') no-repeat bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  border: 1px;
-  border-color: transparent;
-  margin-bottom: 10px;
-  padding: 10px;
 }
 
 .beach h3 {
