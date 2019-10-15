@@ -372,8 +372,6 @@ hr {
   font-size: 35px;
 }
 
-
-
 .net {
   background: image_url('numbers.jpeg') center;
   border-color: transparent;
@@ -410,6 +408,10 @@ hr {
   background-size: cover;
 }
 
+.tech h4, p {
+  font-size: 25px;
+}
+
 .osem h1 {
   font-size: 45px;
 }
@@ -420,6 +422,10 @@ hr {
 
 .vice p {
   font-size: 26px;
+}
+
+.list li {
+  font-size: 23px;
 }
 
 @charset "UTF-8";
