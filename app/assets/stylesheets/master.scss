@@ -229,6 +229,7 @@ body {
 
 .mainframe li {
   font-weight: 200;
+  font-size: 23px;
 }
 
 .link-color {
@@ -383,16 +384,12 @@ hr {
   background: rgba(0, 0, 0, 0.84);
 }
 
+.net li {
+  font-size: 23px;
+}
+
 .blue {
   background: image_url('blue.jpeg') center;
-  box-shadow: 0px 3px 8px #2a2a2a;
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  border: 1px;
-  border-color: transparent;
-  margin-bottom: 10px;
-  padding: 10px;
 }
 
 .software {
