@@ -1,0 +1,45 @@
+[  
+  {
+    "event": "conference",
+    "title": "GSE",
+    "date": "2019-01-04",
+    "event_id": 7,
+    "location": "New York, NY"
+  },
+  {
+    "event": "conference",
+    "title": "SHARE",
+    "date": "2019-06-04",
+    "event_id": 5,
+    "location": "Las Vegas, NV"
+  },
+  {
+    "event": "conference",
+    "title": "SHARE",
+    "date": "2019-07-04",
+    "event_id": 4,
+    "location": "Columbus, OH"
+  },
+  {
+    "event": "conference",
+    "title": "GSE",
+    "date": "2019-02-04",
+    "event_id": 3,
+    "location": "Munich, Germany"
+  },
+  {
+    "event": "conference",
+    "title": "SHARE",
+    "date": "2019-09-04",
+    "event_id": 2,
+    "location": "London, UK"
+  },
+  {
+    "event": "conference",
+    "title": "GSE",
+    "date": "2019-08-04",
+    "event_id": 1,
+    "location": "Las Vegas, NV"
+  }
+]
+

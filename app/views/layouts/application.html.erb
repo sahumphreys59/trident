@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application' %>
     <link rel="stylesheet" href="animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
@@ -41,7 +42,7 @@
                 <%= link_to 'Support', support_path, class: 'navbar-brand' %>
               </li>
               <li class="nav-item">
-                <%= link_to 'News', news_path, class: 'navbar-brand' %>
+                <%= link_to 'Events', events_path, class: 'navbar-brand' %>
               </li>
               <li class="nav-item">
                 <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
@@ -88,10 +89,10 @@
 
          
             <div class="col-sm text-right">
-              <h5>Trident Services, Inc.</h5>
-              <p>1260 41st Ave, Suite K, 
+              <h5 style="font-size: 21px;">Trident Services, Inc.</h5>
+              <p style="font-size: 18px;">1260 41st Ave, Suite K, 
               <br/>
-              Capitola, CA, (831) 465-7661
+              Capitola, CA, (831) 465-7661</p>
             </div> 
         
 

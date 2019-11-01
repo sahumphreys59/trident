@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-	
+
+	def index; end 
+		
 	def home
 	end	
 
@@ -10,9 +12,6 @@ class PagesController < ApplicationController
 	end
 
 	def support
-	end
-
-	def news
 	end
 
 	def aboutUs
