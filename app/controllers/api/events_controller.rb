@@ -32,7 +32,8 @@ class Api::EventsController < ApplicationController
       :title,
       :date,
       :event_id,
-      :location
+      :location,
+      :details
     )
   end
 end
