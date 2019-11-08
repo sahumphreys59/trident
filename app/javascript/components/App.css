@@ -38,17 +38,25 @@ header h1 a:hover {
 
 .eventList {
   background: #f6f6f6;
-  padding: 16px;
+  padding: 20px;
 }
 
 .eventList h2 {
-  font-size: 20px;
-  padding: 8px 6px 10px;
+  font-size: 25px;
+  padding-top: 10px;
+  color: black;
+  font-weight: 200;
+  text-align: center;
+}
+
+.eventList li {
+    color: black;
 }
 
 .eventContainer {
   font-size: 15px;
   line-height: 35px;
+  padding-left: 150px;
 }
 
 .eventContainer h2 {
