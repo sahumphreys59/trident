@@ -19,6 +19,10 @@ export const validateEvent = (event) => {
     errors.location = 'You must enter a location';
   }
 
+  if (event.details === '') {
+    errors.details = 'You must complete the details box';
+  }
+
   return errors;
 };
 

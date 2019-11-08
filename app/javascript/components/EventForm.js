@@ -87,7 +87,7 @@ class EventForm extends React.Component {
   render() {
     const { event } = this.state;
     const cancelURL = event.id ? `/events/${event.id}` : '/events';
-    const title = event.id ? `${event.event_date} - ${event.event_type}` : 'New Event';
+    const title = event.id ? `${event.date} - ${event.type}` : 'New Event';
 
 
     return (
@@ -122,7 +122,19 @@ class EventForm extends React.Component {
               <strong>Location:</strong>
               <input type="text" id="location" name="location" onChange={this.handleInputChange} value={event.location}/>
             </label>
-          </div>      
+          </div>  
+          <div>
+            <label htmlFor="details">
+              <strong>Details:</strong>
+              <textarea
+                cols="30"
+                rows="10"
+                id="details"
+                name="details"
+                onChange={this.handleInputChange}
+              />
+            </label>
+          </div>    
           <div className="form-actions">
             <button type="submit">Save</button>
             <Link to={cancelURL}>Cancel</Link>
@@ -143,6 +155,7 @@ EventForm.defaultProps = {
     title: '',
     date: '',
     location: '',
+    details: '',
   },
 };
 

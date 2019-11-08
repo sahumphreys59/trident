@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Event = ({ event, onDelete }) => (
   <div className="eventContainer">
     <h2>
-      {event.title}
-      {' - '}
       {event.date}
+      {' - '}
+      {event.title}
       <Link to={`/events/${event.id}/edit`}>Edit</Link>
       <button className="delete" type="button" onClick={() => onDelete(event.id)}>
         Delete
@@ -18,6 +18,11 @@ const Event = ({ event, onDelete }) => (
         <strong>Location:</strong>
         {' '}
         {event.location}
+      </li>
+      <li>
+        <strong>Details:</strong>
+        {' '}
+        {event.details}
       </li>
     </ul>
   </div>
