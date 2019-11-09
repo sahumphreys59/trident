@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root'pages#home'
 	get '/software' => 'pages#software'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
 	get '/ftpSupport' => 'pages#ftpSupport'
 	get '/careers' => 'pages#careers'
 	
+	resources :events
 
 
 
