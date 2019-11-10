@@ -2,6 +2,8 @@ class EventsController < ApplicationController
 
 before_action :authenticate_user!, except: :index
 
+
+
 	def index
 		@events = Event.all
 	end	
@@ -31,10 +33,23 @@ before_action :authenticate_user!, except: :index
 		@event.destroy
 		redirect_to events_path
 	end	
-		
+
+
 	private
 
 	def event_params
 		params.require(:event).permit(:title, :start_date, :end_date, :location, :details)
 	end	
+
+	
+
 end
+
+
+
+
+
+
+	
+
+	

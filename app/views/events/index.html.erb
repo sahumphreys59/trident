@@ -6,15 +6,33 @@
 </div>	
 
 <br />	
-<div align="left" style="padding-left:80px;">
-	<%= link_to 'New Event', new_event_path, class: 'btn btn-primary'  %>
-</div>	
+
+<% if user_signed_in? %>
+	<div align="left" style="padding-left:80px;">
+		<%= link_to 'New Event', new_event_path, class: 'btn btn-primary'  %>
+	</div>	
+<% end %>	
+
+<% if user_signed_in? %>
+  <div class="nav-item" style="padding-right:80px;" align="right">
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-secondary' %>
+  </div>
+<% else %>
+  <div class="nav-item" style="padding-right:80px;" align="right">
+    <%= link_to 'Admin', new_user_session_path, class: 'btn-btn-secondary'  %>
+  </div>
+<% end %>
 
 <% @events.each do |event| %>
+
+
 	<div class="event-box col-8 offset-2" >
 		<div style="padding: 20px;">
-	    <%= link_to 'Edit', edit_event_path(event), class: 'btn btn-primary' %>
-	    <%= link_to 'Delete', event_path(event), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
+			<% if user_signed_in? %>
+	    	<%= link_to 'Edit', edit_event_path(event), class: 'btn btn-primary' %>
+	    	<%= link_to 'Delete', event_path(event), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
+	    <% end %>	
+	   
 	  </div>
 
 		<h1 style="font-size: 35px;" align="center"><%= event.title %></h1><br />
@@ -28,12 +46,4 @@
 <% end %>		
 
 
-<% if user_signed_in? %>
-  <div class="nav-item">
-    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-secondary' %>
-  </div>
-<% else %>
-  <div class="nav-item">
-    <%= link_to 'Admin', new_user_session_path, class: 'btn-btn-secondary'  %>
-  </div>
-<% end %>
+
