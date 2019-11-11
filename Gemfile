@@ -81,6 +81,8 @@ gem 'simple_form'
 
 gem 'devise'
 
+ gem 'bootstrap-datepicker-rails'
+
 
 
 

@@ -1,5 +1,9 @@
+
+
+
 <div class="event-box col-5 offset-3">
-	<h1>Enter Event Information:</h1>
+	<br/>
+	<h1 align="center" style="font-size: 25px;">Create New Event</h1>
 	<%= simple_form_for @event do |f| %>
 		<%= f.input :title %>
 		<%= f.input :start_date %>
@@ -7,6 +11,9 @@
 		<%= f.input :location %>
 		<%= f.input :details %>
 		<br />
-		<%= f.submit 'Create', class: 'btn btn-primary' %>
+		<div align="center">
+			<%= f.submit 'Create', class: 'btn btn-primary' %>
+		</div>
 	<% end %>	
+	<br/>
 </div>
