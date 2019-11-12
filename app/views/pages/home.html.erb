@@ -11,10 +11,10 @@
 		<br/>
 		<div class=" animated fadeInRight delay-1s">
 		<u><h2>Upcoming Events</h2></u>
-			<h3>
-			<br/>
-			November 5 - 7, 2019 <a href="http://gse.org.uk/mainsite/content/content_events.php" target="_blank">Guide Share Europe (GSE) Whittlebury Hall - Whittlebury, UK</a> 
-			</h3>
+			<h3 style="font-size: 30px;"><%= @event.title %> : <%= @event.start_date %> - <%= @event.end_date %></h3>
+			<h4 style="font-size: 25px;">Location: <%= @event.location %></h4>
+			Details: <%= @event.details %>
+
 		</div>
 		<br/>		
 	</div>
