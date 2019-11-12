@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 	
 	def home
-		@event = Event.first
+		@event = Event.first	
 	end	
 
 	def software
@@ -36,6 +36,10 @@ class PagesController < ApplicationController
 
 	def careers
 	end
+
+	private
+
+
 
 
 end

@@ -11,9 +11,12 @@
 		<br/>
 		<div class=" animated fadeInRight delay-1s">
 		<u><h2>Upcoming Events</h2></u>
+		<% if @event.present? == true %>
 			<h3 style="font-size: 30px;"><%= @event.title %> : <%= @event.start_date %> - <%= @event.end_date %></h3>
-			<h4 style="font-size: 25px;">Location: <%= @event.location %></h4>
+			<h4 style="font-size: 30px;">Location: <%= @event.location %></h4>
 			Details: <%= @event.details %>
+		<% end %>	
+		</div>	
 
 		</div>
 		<br/>		
