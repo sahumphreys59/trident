@@ -1,0 +1,12 @@
+<div class="event-box col-5 offset-3">
+  <h1>Edit Your Event</h1>
+  <%= simple_form_for @event do |f| %>
+    <%= f.input :title %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <%= f.input :location %>
+    <%= f.input :details %>
+    <br />
+    <%= f.submit 'Update', class: 'btn btn-primary' %>
+  <% end %>
+</div
