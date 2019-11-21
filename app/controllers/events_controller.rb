@@ -5,7 +5,7 @@ before_action :authenticate_user!, except: :index
 
 
 	def index
-		@events = Event.all
+		@events = Event.where('start_date::date >= CURRENT_DATE').order(start_date: :asc)	
 	end	
 
 	def new

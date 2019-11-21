@@ -14,9 +14,12 @@
 //= require activestorage
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require popper
 //= require tether
 //= require bootstrap-sprockets
 //= require_tree .
+//= require bootstrap-datepicker
 
+$(function() {
+    $('input.datepicker').data({behaviour: "datepicker"}).datepicker();
+});
