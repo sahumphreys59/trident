@@ -2,10 +2,8 @@ class EventsController < ApplicationController
 
 before_action :authenticate_user!, except: :index
 
-
-
 	def index
-		@events = Event.where('start_date::date >= CURRENT_DATE').order(start_date: :asc)	
+		@events = Event.order(start_date: :asc).where('start_date::date >= CURRENT_DATE')
 	end	
 
 	def new
