@@ -5,24 +5,25 @@
 	
 	<div class="frosty col-10 offset-1 text-center">
 		<br/>
+		<br/>
 		<h1 class="animated fadeInLeft">Smart Solutions. Smart Work. Smart Future.</h1>
 		<br/>
 		<br/>
 		<br/>
 			<div class=" animated fadeInRight delay-1s">
-			<u><h2>Upcoming Events</h2></u>
 			<% if @event.present? == true %>
-				<h3 style="font-size: 30px;"><%= @event.title %> : <%= @event.start_date %> - <%= @event.end_date %></h3>
+			<u><h2>Upcoming Events</h2></u>
+				<h3 style="font-size: 30px;"><%= @event.title %> : <%= @event.start_date.strftime("%B %e, %Y") %> - <%= @event.end_date.strftime("%B %e, %Y") %></h3>
 				<h4 style="font-size: 30px;">Location: <%= @event.location %></h4>
 			<% end %>	
 			</div>	
 			<br/>
+
 		</div>
 		<br/>		
-	</div>
+</div>
+
 	<br/>
-	<br/>
-</div>	
 	
 
 <div class="home">

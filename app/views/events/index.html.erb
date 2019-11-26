@@ -34,7 +34,7 @@
 		  </div>
 
 			<u><h1 style="font-size: 35px;" align="center"><%= event.title %></h1></u><br />
-			<h1 style="font-size: 25px;" align="center">Dates: <%= event.start_date %> - <%= event.end_date %></h1>
+			<h1 style="font-size: 25px;" align="center">Dates: <%= event.start_date.strftime("%B %e, %Y") %> - <%= event.end_date.strftime("%B %e, %Y") %></h1>
 			<h1 style="font-size: 22px;" align="center">Location: <%= event.location %></h1><br />
 			<h1 align="center">Details: <%= event.details %></h1><br />
 		</div>
