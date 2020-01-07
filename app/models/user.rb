@@ -12,6 +12,7 @@ class User < ApplicationRecord
     sarah.humphreys59@gmail.com
     jaye_cerruti@triserv.com
     tim_humphreys@triserv.com
+    test@triserv.com
   ].freeze
 
   validates :email, inclusion: { in: ALLOWED_EMAILS, message: :invalid }
