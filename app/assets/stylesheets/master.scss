@@ -12,6 +12,10 @@ body {
   font-weight: 200;
 }
 
+body.map {
+  background: image_url('map3.jpeg')
+}
+
 .event {
   background: #022747;
 }
@@ -24,12 +28,6 @@ body {
   margin-bottom: 5px;
 }
 
-.map {
-  background: image_url('map3.jpg') no-repeat center center fixed;
-  background-size: cover;
-  margin: 0px;
-  padding: 0px;
-}
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
