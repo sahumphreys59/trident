@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 	
 	def home
-		@event = Event.first	
+		@event = Event.where('start_date::date >= CURRENT_DATE').first
 	end	
 
 	def software
