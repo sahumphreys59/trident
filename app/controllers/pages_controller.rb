@@ -36,6 +36,7 @@ class PagesController < ApplicationController
 
 	def careers
 		@fulltimejobs = Fulltimejob.order(created_at: :asc)
+		@parttimejobs = Parttimejob.order(created_at: :asc)
 	end
 
 	private
