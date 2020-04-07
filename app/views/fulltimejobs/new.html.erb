@@ -1,0 +1,9 @@
+<%= simple_form_for @fulltimejob do |f| %>
+		<%= f.input :title %>
+		<%= f.input :location %>
+		<%= f.input :details %>
+		<br />
+		<div align="center">
+			<%= f.submit 'Create', class: 'btn btn-primary' %>
+		</div>
+	<% end %>

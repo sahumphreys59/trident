@@ -1,0 +1,2 @@
+module FulltimejobHelper
+end

@@ -1,6 +1,71 @@
-
 <br/>
+	
+
+			<% if user_signed_in? %>
+			  <div class="nav-item" style="padding-right:50px;" align="right">
+			    <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'btn btn-secondary' %>
+			  </div>
+			<% else %>
+			  <div class="nav-item" style="padding-right:50px;" align="right">
+			    <%= link_to 'Admin', new_user_session_path, class: 'btn-btn-secondary'  %>
+			  </div>
+			<% end %>
+
 <div class="careers col-10 offset-1">
 	<u><h1 align="center" class="animated zoomIn">Career Oppertunities</h1></u>
+	<br/>
+		<div class="row col-10">
+			<div class="col-5 offset-1">
+				<% if user_signed_in? %>
+					<div align="left" style="float: right;">
+						<%= link_to 'New Job', new_fulltimejob_path, class: 'btn btn-primary'  %>
+					</div>	
+				<% end %>
+				<h3 align="center">Full Time</h3>
+				<hr>
+				<br/>
+				<% @fulltimejobs.each do |fulltimejob| %>
+					<% if user_signed_in? %>
+					<div style="float: right;">
+						<%= link_to 'Edit', edit_fulltimejob_path(fulltimejob), class: 'btn btn-primary' %>
+						<%= link_to 'Delete', fulltimejob_path(fulltimejob), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
+					</div>	
+					<% end %>
+					<h5><b><%= link_to fulltimejob.title, fulltimejob_path(fulltimejob) %></b> <br/>
+							<%= fulltimejob.location %> <br/>
+					</h5>	
+					<br/>	
+				<% end %>
 
+			</div>
+			<div class="col-5 offset-1">
+				<% if user_signed_in? %>
+					<div align="left" style="float: right;">
+						<%= link_to 'New Job', new_parttimejob_path, class: 'btn btn-primary'  %>
+					</div>	
+				<% end %>
+				<h3 align="center">Part Time</h3>
+				<hr>
+				<br/>
+				<% @parttimejobs.each do |parttimejob| %>
+					<% if user_signed_in? %>
+					<div style="float: right;">
+						<%= link_to 'Edit', edit_parttimejob_path(parttimejob), class: 'btn btn-primary' %>
+						<%= link_to 'Delete', parttimejob_path(parttimejob), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
+					</div>	
+					<% end %>
+					<h5><b><%= link_to parttimejob.title, parttimejob_path(parttimejob) %></b> <br/>
+							<%= parttimejob.location %> <br/>
+					</h5>	
+					<br/>	
+				<% end %>
+
+			</div>
+		</div>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+	
+      

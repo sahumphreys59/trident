@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 	get '/careers' => 'pages#careers'
 	
 	resources :events
+	resources :fulltimejobs
+	resources :parttimejobs
 
 
 
