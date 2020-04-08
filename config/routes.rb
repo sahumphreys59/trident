@@ -19,6 +19,11 @@ Rails.application.routes.draw do
 	resources :parttimejobs
 
 
+	get '/apply' => 'pages#apply'
+	post '/apply', to: 'pages#create'
+	
+
+
 
 
 end

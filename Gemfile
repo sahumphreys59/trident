@@ -83,6 +83,10 @@ gem 'devise'
 
 gem 'bootstrap-datepicker-rails'
 
+gem 'mail_form'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 
 

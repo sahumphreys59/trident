@@ -39,6 +39,18 @@ class PagesController < ApplicationController
 		@parttimejobs = Parttimejob.order(created_at: :asc)
 	end
 
+	def apply
+	end
+
+	def create
+  		page = Page.new(params[:contact_form])
+      if page.deliver
+        redirect_to careers_path, :notice => 'Thank you for applying.'
+      else
+        redirect_to apply_path, :notice => 'Message could not be sent. Please try again.'
+      end
+  end
+
 	private
 
 
