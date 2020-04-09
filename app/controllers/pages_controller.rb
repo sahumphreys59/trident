@@ -42,9 +42,13 @@ class PagesController < ApplicationController
 	def apply
 	end
 
+	def new
+		@page = Page.new
+	end	
+
 	def create
-  		page = Page.new(params[:contact_form])
-      if page.deliver
+  		@page = Page.new(params[:contact_form])
+      if @page.deliver
         redirect_to careers_path, :notice => 'Thank you for applying.'
       else
         redirect_to apply_path, :notice => 'Message could not be sent. Please try again.'
@@ -52,6 +56,10 @@ class PagesController < ApplicationController
   end
 
 	private
+
+	def contact_form
+		params.require(:page).permit(:name, :email, :location, :salary, :message)
+	end	
 
 
 end

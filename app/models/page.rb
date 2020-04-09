@@ -5,6 +5,8 @@ class Page < MailForm::Base
   attribute :location
   attribute :message
 
+  
+
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
@@ -14,4 +16,5 @@ class Page < MailForm::Base
       :from => %("#{name}" <#{email}>)
     }
   end
+
 end
