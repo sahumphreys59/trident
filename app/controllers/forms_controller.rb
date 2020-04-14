@@ -7,7 +7,7 @@ class FormsController < ApplicationController
 	def create
   		@form = Form.new(form_params)
       if @form.deliver
-        redirect_to careers_path, :notice => 'Thank you for applying.'
+        redirect_to careers_path, :notice => 'Thank you for applying. We will be in contact soon.'
       else
         redirect_to new_form_path, :notice => 'Message could not be sent. Please try again.'
         puts @form.errors.full_messages
@@ -21,7 +21,7 @@ class FormsController < ApplicationController
   private
 
   def form_params
-  	params.require(:form).permit(:name, :email, :location, :salary, :message)
+  	params.require(:form).permit(:name, :email, :location, :salary, :message, :attachment)
   end	
 end
 

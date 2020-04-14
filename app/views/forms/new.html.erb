@@ -21,6 +21,8 @@
         <%= f.text_area :message, rows: 8, cols: 40,
                           placeholder: "Inlcude extra details"%></br>
 
+        <%= f.file_field :attachment %>
+
         <br/>
         <div align="center">
           <%= f.submit 'Submit', class: 'btn btn-primary' %>

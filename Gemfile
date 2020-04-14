@@ -87,6 +87,8 @@ gem 'mail_form'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
+gem 'carrierwave', '~> 2.1'
+
 
 
 

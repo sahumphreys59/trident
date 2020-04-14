@@ -4,14 +4,19 @@ class Form < MailForm::Base
   attribute :salary, :validate => true
   attribute :location, :validate => true
   attribute :message, :validate => true
+  attribute :attachment, attachment: true
+
+
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
+  	
     {
       :subject => "Trident Applicant",
       :to => "sarah.humphreys59@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{name}" <#{email}>),
+      
     }
   end
 
