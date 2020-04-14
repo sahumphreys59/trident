@@ -1,0 +1,31 @@
+<br/>
+<div class="application col-lg-5 col-sm-12">
+  <br/>
+  <u><h2 style="font-size: 30px;" align="center">Please complete the form below</h2></u>
+  <br/>
+  <%= simple_form_for @form do |f| %>
+      <div>
+          
+          <%= f.input  :name %></br>
+          
+          
+          <%= f.input :email %></br>
+          
+          
+          <%= f.input :location %></br>
+          
+          
+          <%= f.input :salary%></br> 
+          
+        
+        <%= f.text_area :message, rows: 8, cols: 40,
+                          placeholder: "Inlcude extra details"%></br>
+
+        <br/>
+        <div align="center">
+          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %> 
+   <br/> 
+</div> 
