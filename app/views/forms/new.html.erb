@@ -1,5 +1,5 @@
 <br/>
-<div class="application col-lg-5 col-sm-12">
+<div class="application col-lg-5 col-sm-10">
   <br/>
   <u><h2 style="font-size: 30px;" align="center">Please complete the form below</h2></u>
   <br/>
@@ -17,11 +17,12 @@
           
           <%= f.input :salary%></br> 
           
-        
+        <h2>Message</h2>
         <%= f.text_area :message, rows: 8, cols: 40,
-                          placeholder: "Inlcude extra details"%></br>
+                          placeholder: "Inlcude extra details"%></br><br/>
 
-        <%= f.file_field :attachment %>
+        <h2>Please attach your resume</h2>
+        <%= f.file_field :attachment %><br/>
 
         <br/>
         <div align="center">

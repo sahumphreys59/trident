@@ -135,9 +135,7 @@ body.map {
   font-weight: 200;
 }
 
-.hr {
-	color: white;
-}
+
 
 .news {
   margin-left: 50px;
@@ -342,9 +340,9 @@ hr {
   border: 0;
   clear:both;
   display:block;
-  width: 76%;               
+  width: 50%;               
   background-color: white;
-  height: 1px;
+  height: 2px;
 }
 
 
@@ -449,7 +447,9 @@ hr {
 
 
 .fulltime {
-  background: #608BB1;
+  background: #022747;
+  border: 1px solid #ccc;
+  box-shadow: 0px 3px 8px white;
 }
 
 .contact-form-text-area {
@@ -489,9 +489,12 @@ font-size: .8em;
 }
 
 .application {
-  background: #306694;
+  background: #022747;
 }
 
+.fulljob {
+  background: #48535C;
+}
 @charset "UTF-8";
 
 /*!
