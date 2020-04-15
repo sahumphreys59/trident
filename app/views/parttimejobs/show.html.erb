@@ -1,12 +1,19 @@
 <br/>
 <br/>
-<div class="col-10 offset-1">
+<div class="boonah-box col-8 offset-2">
+
+	<%= link_to careers_path do %> 
+    <span class="fa fa-arrow-left fa-2x"></span>
+  <% end %>
 	<div class="row">
-		<div class="col-5" align="center">
+		<div class="col-lg-5 col-sm-12 offset-1" align="center">
+			<br/>
 		<h1 style="font-size: 40px;"><u><%= @parttimejob.title %></h1></u>
-			 <div style="font-size: 25px;">Location: <%= @parttimejob.location %></div>
+		<div style="font-size: 25px;">Location: <%= @parttimejob.location %></div>
 	</div>
-	<div class="col-5">
+	<div class="col-lg-5 col-sm-12 mb-3">
+		<br/>
+		<h4>Details: </h4>
 		<h3><%= @parttimejob.details %></h3>
 		<br/>
 		<br/>
@@ -15,7 +22,8 @@
 		  Apply Here
 			</button>
 		</div>
-</div>
+		<br/>
+	</div>
 </div>	
 
 	
@@ -33,7 +41,7 @@
 	    <%= simple_form_for (Form.new) do |f| %>
 	    <div class="modal-body">
 	          <%= f.input :name, placeholder: "Please include your first and last name" %><br/>
-	          <%= f.input :email, placeholder: "Please enter valid email"%><br/>
+	          <%= f.input :email, placeholder: "Please enter a valid email"%><br/>
 	          <%= f.input :location, placeholder: "Your location"%> <br/>
 	          <%= f.input :salary, placeholder: "Desired salary"%><br/>
 	        <h2>Message</h2>
