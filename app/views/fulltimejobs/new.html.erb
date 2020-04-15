@@ -1,9 +1,13 @@
-<%= simple_form_for @fulltimejob do |f| %>
-		<%= f.input :title %>
-		<%= f.input :location %>
-		<%= f.input :details %>
-		<br />
-		<div align="center">
-			<%= f.submit 'Create', class: 'btn btn-primary' %>
-		</div>
+<br/>
+<div class="job-box col-5 offset-3">
+	<h3 align="center">New Full-time Job</h3>
+	<%= simple_form_for @fulltimejob do |f| %>
+			<%= f.input :title %>
+			<%= f.input :location %>
+			<%= f.input :details %>
+			<br />
+			<div align="center">
+				<%= f.submit 'Create', class: 'btn btn-primary' %>
+			</div>
 	<% end %>
+</div>	

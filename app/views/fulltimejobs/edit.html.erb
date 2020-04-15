@@ -1,7 +1,11 @@
-<%= simple_form_for @fulltimejob do |f| %>
+<br/>
+<div class="job-box col-5 offset-3">
+	<h3 align="center">Edit Full-time Job</h3>
+	<%= simple_form_for @fulltimejob do |f| %>
     <%= f.input :title %>
     <%= f.input :location %>
     <%= f.input :details %>
     <br />
     <%= f.submit 'Update', class: 'btn btn-primary' %>
   <% end %>
+ </div> 
