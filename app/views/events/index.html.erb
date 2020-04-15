@@ -8,7 +8,10 @@
 	<div class="animated zoomIn">		
 			<% if user_signed_in? %>
 				<div align="left" style="padding-left:80px;">
-					<%= link_to 'New Event', new_event_path, class: 'btn btn-primary'  %>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+					  New Event
+					</button>
 				</div>	
 			<% end %>	
 
@@ -47,3 +50,34 @@
 
 	</div>
 </body>	
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"  style="background:#022747;">
+        <h1 align="center" style="font-size: 25px;">Create New Event</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color; white;">
+          <span aria-hidden="true">x</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background:#022747;">
+        
+				<%= simple_form_for @event do |f| %>
+					<%= f.input :title %>
+					<%= f.input :start_date, as: :date, input_html: { class: "datepicker" }%>
+					<%= f.input :end_date, as: :date, input_html: { class: "datepicker" }%>
+					<%= f.input :location %>
+					<%= f.input :details %>
+					<br />
+					<div align="center">
+						<%= f.submit 'Create', class: 'btn btn-primary' %>
+					</div>
+					<br/>
+				<% end %>
+      </div>
+    </div>
+  </div>
+</div>
