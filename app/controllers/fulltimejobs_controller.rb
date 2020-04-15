@@ -5,6 +5,7 @@ class FulltimejobsController < ApplicationController
 
 	def new
 		@fulltimejob = Fulltimejob.new
+		@form = Form.new
 	end
 
 	def create

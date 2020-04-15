@@ -1,24 +1,54 @@
 <br/>
 <br/>
 <div class="col-10 offset-1">
-		<h1 style="font-size: 40px;"><u><%= @parttimejob.title %></u> (location: <%= @parttimejob.location %>)</h1>
-		<h3 class="offset-1"><%= @parttimejob.details %></h3>
-
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
+	<div class="row">
+		<div class="col-5" align="center">
+		<h1 style="font-size: 40px;"><u><%= @parttimejob.title %></h1></u>
+			 <div style="font-size: 25px;">Location: <%= @parttimejob.location %></div>
+	</div>
+	<div class="col-5">
+		<h3><%= @parttimejob.details %></h3>
+		<br/>
+		<br/>
+		<div align="center">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  Apply Here
+			</button>
+		</div>
+</div>
 </div>	
 
-	<div align="center" style="font-size: 25px;">
-		<%= link_to 'Apply Here', new_form_path, class: "btn btn-primary" %>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header" style="background:#022747;">
+	      		      <h3 align="center">Please complete the form</h3>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true" style="color: white;">×</span>
+	        </button>
+	      </div>
+	      <div class="modal-body" style="background:#022747;">
+	    <%= simple_form_for (Form.new) do |f| %>
+	    <div class="modal-body">
+	          <%= f.input :name, placeholder: "Please include your first and last name" %><br/>
+	          <%= f.input :email, placeholder: "Please enter valid email"%><br/>
+	          <%= f.input :location, placeholder: "Your location"%> <br/>
+	          <%= f.input :salary, placeholder: "Desired salary"%><br/>
+	        <h2>Message</h2>
+	        <%= f.text_area :message, rows: 8, cols: 40,
+	                          placeholder: "Inlcude extra details"%></br><br/>
+
+	        <h2>Please attach your resume.</h2>
+	        <%= f.file_field :attachment %><br/>
+	      </div>
+	        <br/>
+	        <div align="center">
+	          <%= f.submit 'Submit', class: 'btn btn-primary' %>
+	        </div>
+	    <% end %>
+	      </div>
+	    </div>
+	  </div>
 	</div>
