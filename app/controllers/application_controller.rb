@@ -4,12 +4,20 @@ class ApplicationController < ActionController::Base
 
 
 	# def after_sign_in_path_for(resource)
-	# 	events_path
+	# 	redirect_back(fallback_location: fallback_location)
 	# end	
 
 	# def after_sign_out_path_for(resource)
-	# 	events_path
+	# 	redirect_back
 	# end	
+
+  def after_sign_in_path_for(resource_or_scope)
+    stored_location_for(resource_or_scope) || super
+  end
+
+  def after_sign_out_path_for(resource_or_scope)
+    session[:previous_url] = request.referrer
+  end
 
 
 	private
@@ -25,9 +33,5 @@ class ApplicationController < ActionController::Base
     def store_user_location!
       # :user is the scope we are authenticating
       store_location_for(:user, request.fullpath)
-    end
-	
-
-	
-			
+    end		
 end
