@@ -11,7 +11,6 @@ class Form < MailForm::Base
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
-  	
     {
       :subject => "Trident Applicant",
       :to => "sarah.humphreys59@gmail.com",
@@ -19,5 +18,7 @@ class Form < MailForm::Base
       
     }
   end
+
+ 
 
 end
