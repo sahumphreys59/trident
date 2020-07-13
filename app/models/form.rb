@@ -13,12 +13,12 @@ class Form < MailForm::Base
   def headers
     {
       :subject => "Trident Applicant",
-      :to => "shumphreys1@antioch.edu",
+      :to => "sarah.humphreys59@gmail.com",
       :from => %("#{name}" <#{email}>),
       
     }
   end
 
-
+ 
 
 end
