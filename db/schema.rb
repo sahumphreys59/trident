@@ -10,15 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_09_191502) do
+ActiveRecord::Schema.define(version: 2020_04_06_234103) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "contacts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "events", force: :cascade do |t|
     t.string "title"
@@ -45,13 +40,6 @@ ActiveRecord::Schema.define(version: 2020_04_09_191502) do
     t.string "title"
     t.string "location"
     t.string "details"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "resumes", force: :cascade do |t|
-    t.string "name"
-    t.string "attatchment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

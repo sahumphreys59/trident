@@ -61,7 +61,7 @@
 						<u><h3 align="center" style="font-size: 35px;">Part-Time Positions</h3></u>
 						<br/>
 					</div>	
-						<br/>
+						
 						<% @parttimejobs.each do |parttimejob| %>
 						<% if user_signed_in? %>
 							<div style="float: right;">
@@ -71,9 +71,10 @@
 						<% end %>	
 						<h3><b>
 							<div align="center">
-								<%= link_to parttimejob.title, parttimejob_path(parttimejob) %></b> <br/>
-								
-							</div></h3>
+								<%= link_to parttimejob.title, parttimejob_path(parttimejob) %></b>
+								<br/>
+							</div>
+						</h3>
 							<div align="center">
 								<h4><%= parttimejob.location %></h4>
 							</div>	
