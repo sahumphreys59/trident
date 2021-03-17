@@ -124,14 +124,17 @@ body.map {
   padding: 10px;
 }
 
+.exit_sniffer {
+  background-color: #7aa1bf;
+  padding: 15px;
+  border-radius: 15px;
+}
 
 .blink{
     color: white;
     animation: blink 1.5s linear infinite;
     font-size: 25px;
-    background-color: #7aa1bf;
     padding: 15px;
-    border-radius: 15px;
   }
   
 
