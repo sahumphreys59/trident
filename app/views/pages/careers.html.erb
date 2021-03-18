@@ -69,11 +69,13 @@
 								<%= link_to 'Delete', parttimejob_path(parttimejob), method: :delete, data: {confirm: 'Are you sure you want to  delete this?'}, class: 'btn btn-danger' %>
 							</div>
 						<% end %>	
-						<h3><b>
-							<div align="center">
-								<%= link_to parttimejob.title, parttimejob_path(parttimejob) %></b>
+						<h3>
+							<b>
+								<div align="center">
+									<%= link_to parttimejob.title, parttimejob_path(parttimejob) %>
+								</div>	
+							</b>
 								<br/>
-							</div>
 						</h3>
 							<div align="center">
 								<h4><%= parttimejob.location %></h4>
@@ -81,7 +83,6 @@
 						<br/>
 						<hr>
 					<% end %>	
-					<br/>
 				</div>	
 			</div>
 		</div>
