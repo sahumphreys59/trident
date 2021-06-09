@@ -22,7 +22,7 @@
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 
     <div class="pic">
-      <%= link_to image_tag('trident5.png'), root_path %>
+      <%= link_to image_tag('trident.png'), root_path %>
     </div>
 
   
@@ -32,21 +32,7 @@
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-md-0"> 
-              <li class="nav-item">
-                <%= link_to 'Home', root_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Software', software_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Services', services_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Support', support_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'News', events_path, class: 'navbar-brand' %>
-              </li>
+
               <li class="nav-item">
                 <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
               </li>
@@ -56,6 +42,24 @@
               <li class="nav-item">
                 <%= link_to 'Contact Us', contact_path, class: 'navbar-brand' %>
               </li> 
+              <li class="nav-item">
+                <%= link_to 'Home', root_path, class: 'navbar-brand' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'News', events_path, class: 'navbar-brand' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Partners', partners_path, class: 'navbar-brand' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Services', services_path, class: 'navbar-brand' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Software', software_path, class: 'navbar-brand' %>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Support', support_path, class: 'navbar-brand' %>
+              </li>
             </ul>
         </div>  
      

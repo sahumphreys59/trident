@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 	get '/systemSupport' => 'pages#systemSupport'
 	get '/ftpSupport' => 'pages#ftpSupport'
 	get '/careers' => 'pages#careers'
+	get '/partners' => 'pages#partners'
 	
 	resources :events
 	resources :fulltimejobs

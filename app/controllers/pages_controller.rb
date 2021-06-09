@@ -41,4 +41,7 @@ class PagesController < ApplicationController
 		@parttimejob = Parttimejob.new
 	end
 
+	def partners
+	end
+
 end
