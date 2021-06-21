@@ -71,7 +71,6 @@ body.map {
 }
 
 .hero {
-  moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
 	background: image_url('computer.jpg') center;
@@ -124,9 +123,9 @@ body.map {
 }
 
 .exit_sniffer {
-  background-color: #7aa1bf;
+  background-color: #4287f5;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 .blink{
@@ -485,6 +484,13 @@ hr {
 }
 
 
+.press {
+  border-style: double;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.58);
+  font-size: 25px;
+}
+
 
 .list li {
   font-size: 23px;
@@ -540,7 +546,7 @@ font-size: .8em;
 .fulljob {
   background: rgba(5, 4, 4, 0.43);
 }
-@charset "UTF-8";
+
 
 /*!
  * animate.css -https://daneden.github.io/animate.css/
@@ -636,6 +642,13 @@ font-size: .8em;
   word-wrap: break-word;
 }
 
+
+.col-center-block {
+  float: none;
+  display: block;
+  margin: 0 auto;
+  /* margin-left: auto; margin-right: auto; */
+}
 
 
 @-webkit-keyframes flash {
