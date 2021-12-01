@@ -11,7 +11,10 @@ body {
   font-weight: 200;
 }
 
-
+.system-support {
+  padding: 20px;
+  background-color: #2E2467;
+}
 
 body.map {
   background: image_url('map3.jpeg')
@@ -124,9 +127,8 @@ body.map {
 
 .exit_explorer {
   background-color: #4287f5;
-  width: 50%;
+  width: 45%;
   padding: 15px;
-  border-radius: 12px;
 }
 
 .blink{
@@ -136,6 +138,14 @@ body.map {
     padding: 15px;
   }
   
+.item {
+  padding: 20px;
+}
+
+.item-content {
+  background-color: rgba(182, 182, 220, 0.25);
+  padding: 20px;
+}
 
 @keyframes blink{
 0%{opacity: 0;}
@@ -329,14 +339,6 @@ a {
   font-size: 35px;
 }
 
-.esps h1 {
-  font-size: 40px;
-}
-
-.esps h6 {
-  font-size: 25px;
-}
-
 .net h6 {
   font-size: 26px;
 }
@@ -433,7 +435,6 @@ hr {
 }
 
 .net {
-  background: image_url('numbers.jpeg') center;
   border-color: transparent;
   padding: 10px;
 }
