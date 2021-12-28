@@ -11,6 +11,12 @@ body {
   font-weight: 200;
 }
 
+.partners-heading {
+  background: image_url('world-map.jpg') center;
+  padding: 30px;
+  height: 150px;
+}
+
 .system-support {
   padding: 20px;
   background-color: #2E2467;
@@ -58,20 +64,25 @@ body.map {
 
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 400;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: image_url('texture.jpeg');  
+  background: image_url('ep_naturalblack.png');  
 }
 
 .navbar-inverse a.navbar-brand {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 23px;
+  padding: 5px;
 }
 
 .navbar-nav {
   text-align: right;
 }
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
 
 .hero {
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -126,9 +137,17 @@ body.map {
 }
 
 .exit_explorer {
-  background-color: #4287f5;
-  width: 45%;
+  background-color: #4c4f4d;
+  width: 40%;
   padding: 15px;
+}
+
+.exit_explorer:hover {
+  background-color: #2e302f;
+}
+
+.exit_explorer a:hover {
+  color: white;
 }
 
 .blink{
@@ -143,7 +162,6 @@ body.map {
 }
 
 .item-content {
-  background-color: rgba(182, 182, 220, 0.25);
   padding: 20px;
 }
 
@@ -388,7 +406,7 @@ hr {
   display:block;
   width: 50%;               
   background-color: white;
-  height: 2px;
+  height: 1.5px;
 }
 
 

@@ -8,7 +8,6 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 #flex-content-container {
@@ -24,17 +23,13 @@ body {
   padding: 10px 0px;
   margin-top: 30px;
   font-weight: 100;
+  clear: both;
+  position: relative;
 }
 
 #footer a {
   color: white;
   font-weight: 100;
-}
-
-.social-button {
- 	padding: 10px;
- 	margin-right: 40px;
- 	margin-left: 40px;
 }
 
 .footer-link {
