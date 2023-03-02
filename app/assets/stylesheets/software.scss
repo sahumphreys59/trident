@@ -1,0 +1,61 @@
+.software-item {
+  flex: 1;
+}
+
+.software-item p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.software-item li {
+  margin: 10px 0;
+}
+
+.software hr {
+  margin: 0;
+}
+
+.docs {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  gap: 2rem;
+}
+
+.docs > a {
+  display: block;
+}
+
+.software-image {
+  display: inline-block;
+  max-width:750px;
+  max-height:400px;
+}
+
+.software .section {
+  margin-top: 0;
+}
+
+.software-lower.section {
+  margin-top: 5rem;
+}
+
+.software {
+  background: image_url('ocean.jpeg') no-repeat bottom;
+  background-size: cover;
+}
+
+.software .frosty {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1000px) {
+  .software .row-content {
+    flex-direction: column;
+  }
+
+  .docs.flex-item {
+    align-self: center;
+  }
+}

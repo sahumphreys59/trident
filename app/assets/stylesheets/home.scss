@@ -1,0 +1,51 @@
+.home-banner {
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+	background: image_url('computer.jpg') center;
+  border: 1px solid #ccc;
+  border-color: transparent;
+  margin-bottom: 10px;
+	color: white;
+	box-shadow: 0px 3px 8px #2a2a2a;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+}
+
+.home-banner .frosty {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.home-banner .frosty h1 {
+  font-size:  70px;
+}
+
+.exit_explorer {
+  width: 50%;
+  padding: 1rem 0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.exit_explorer a:hover {
+  color: white;
+}
+
+.blink {
+  color: white;
+  animation: blink 3s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .exit_explorer {
+    width: 90%;
+  }
+}

@@ -1,0 +1,50 @@
+
+.services.section {
+  width: 70vw;
+}
+
+.flex-item .image {
+  align-self: center;
+  justify-content: center;
+  max-width: 350px;
+}
+
+.environment {
+  position: relative;
+}
+
+.environment-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('forest.jpeg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.environment .frosty {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
+}
+
+.manage-serv-info {
+  width: 70vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 900px) {
+  .environment .frosty {
+    width: 90vw;
+    padding: 2rem;
+  }
+}

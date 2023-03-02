@@ -1,0 +1,25 @@
+.portrait {
+  align-self: flex-start;
+  justify-content: flex-start;
+  width: 25vw;
+  flex: 1;
+}
+
+.portrait img {
+  display: inline-block;
+  max-width: 250px;
+}
+
+.about.section {
+  width: 70vw;
+}
+
+@media screen and (max-width: 900px) {
+  .about.section {
+    width: 90vw;
+  }
+  .portrait {
+    align-self: center;
+    justify-items: center;
+  }
+}

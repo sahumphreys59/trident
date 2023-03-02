@@ -1,3 +1,67 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.section.events {
+  position: relative;
+}
+
+.event-new {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.event {
+  display: flex;
+  background: image_url('page-heading.png');
+  height: 100px;
+}
+
+.event-box {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.66);
+  border: 1px solid #ccc;
+  border-color: transparent;
+  width: 50vw;
+  margin: 1rem auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.box-edit, .box-new {
+  border: 1px solid #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  margin: 1rem auto;
+  padding: 2rem;
+  position: relative;
+  box-shadow:0px 0px 10px #000000;
+}
+
+.action-btns {
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 1rem;
+}
+
+.release {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .events.section {
+    width: 90vw;
+  }
+
+  .events.section .event-box {
+    width: 75vw;
+  }
+
+}

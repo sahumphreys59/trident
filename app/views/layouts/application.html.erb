@@ -19,89 +19,76 @@
 
     <div id="flex-content-container">
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <nav class="navbar navbar-toggleable-md navbar-inverse ">
+        <div class="logo">
+          <%= link_to image_tag('trident.png', :class=>'img-fluid'), root_path %>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0"> 
+            <li class="nav-item">
+              <%= link_to 'Software', software_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Services', services_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Support', support_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Partners', partners_path, class: 'navbar-brand' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
+            </li>
+            <li>
+            <%= link_to 'Careers', careers_path, class: 'navbar-brand' %>
+          </li>  
+          <li class="nav-item">
+            <%= link_to 'News', events_path, class: 'navbar-brand' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Contact', contact_path, class: 'navbar-brand' %>
+          </li> 
+          </ul>
+        </div>  
+      </nav>
 
-    <div class="pic">
-      <%= link_to image_tag('trident.png', :class=>'img-fluid'), root_path %>
+
+        <% if notice.present? %>
+          <p class="alert alert-info"><%= notice %></p>
+        <% end %>
+        <% if alert.present? %>
+          <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+
+
+          <%= yield %>
     </div>
 
-  
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-md-0"> 
-
-              <li class="nav-item">
-                <%= link_to 'About Us', aboutUs_path, class: 'navbar-brand' %>
-              </li>
-              <li>
-                <%= link_to 'Careers', careers_path, class: 'navbar-brand' %>
-              </li>  
-              <li class="nav-item">
-                <%= link_to 'Contact', contact_path, class: 'navbar-brand' %>
-              </li> 
-              <li class="nav-item">
-                <%= link_to 'News', events_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Partners', partners_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Services', services_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Software', software_path, class: 'navbar-brand' %>
-              </li>
-              <li class="nav-item">
-                <%= link_to 'Support', support_path, class: 'navbar-brand' %>
-              </li>
-            </ul>
-        </div>  
-     
-      
-    </nav>
-
-
-<% if notice.present? %>
-  <p class="alert alert-info"><%= notice %></p>
-<% end %>
-<% if alert.present? %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
-
-    <%= yield %>
-  </div>
-
     <div id="footer">
+      <div class="row-content">
 
-        <div class="align">
-          <div class="row">
-
-            <div class="col-sm">
-              <br/>
-                <span><%= image_tag('ibm2.0.jpg', :class => 'footer-pics')%></span>
-                <span><%= image_tag('bob.jpg', :class => 'footer-pics')%></span>
-                <span><%= image_tag('Destination_z_print.jpg', :class => 'footer-pics') %></span>
-                <span><%= image_tag('gsa_logo.jpg', :class => 'footer-pics') %></span>
-            </div>   
-
-           
-            <div class="col-sm text-right">
-              <br/>
-              <h5>Trident Services, Inc.</h5>
-              <p style="font-size: 19px;">1260 41st Ave, Suite K, 
-              <br/>
-                Capitola, CA, (831) 465-7661
-              </p>  
-            </div> 
-          
-          </div>  
+        <div class="footer-item">
+          <span><%= image_tag('ibm2.0.jpg', :class => 'footer-pics')%></span>
+          <span><%= image_tag('bob.jpg', :class => 'footer-pics')%></span>
+          <span><%= image_tag('Destination_z_print.jpg', :class => 'footer-pics') %></span>
+          <span><%= image_tag('gsa_logo.jpg', :class => 'footer-pics') %></span>
+        </div>
+        <div class="footer-item">
+          <h5>Trident Services, Inc.</h5>
+          <p style="font-size: 19px;">1260 41st Ave, Suite K, 
+          <br/>
+            Capitola, CA, (831) 465-7661
+          </p>
         </div>
 
-    </div> 
+      </div>
+    </div>
+ 
 
   </body>
 </html>

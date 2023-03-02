@@ -1,0 +1,32 @@
+.partners-heading {
+  background: image_url('world-map.jpg') center;
+}
+
+.partners .row-content {
+  justify-content: space-between;
+}
+
+.section.partners {
+  width: 60vw;
+}
+
+.partners img.image {
+  max-width:400px;
+  max-height:200px;
+}
+
+.flex-item.background-light {
+  background-color: hsla(157, 2%, 61%, .5);
+}
+
+.partner-info.flex-item {
+  gap: 2rem;
+}
+ 
+
+@media screen and (max-width: 1300px) {
+  .section.partners {
+    width: 75vw;
+  }
+}
+

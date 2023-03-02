@@ -16,27 +16,34 @@ body {
 
 #footer {
   width: 100%;
-  min-height: 100px;
-  background: #022747;
+  height: max-content;
+  background: #0d0c0c;
   color: white;
   font-family: "Helvetica Neue", Helvetica;
-  padding: 10px 0px;
   margin-top: 30px;
   font-weight: 100;
   clear: both;
-  position: relative;
+  align-self: flex-end;
 }
 
-#footer a {
-  color: white;
-  font-weight: 100;
+#footer .row-content {
+  gap: 1rem;
+  width: 100vw;
+  padding: 1rem;
+  margin: 0;
+  justify-content: space-between;
 }
 
-.footer-link {
-	font-size: 20px;
+.footer-item > span img{
+  display: inline-block;
+  width: 150px;
+  height: 75px;
 }
 
-.align {
-	margin-left: 50px;
-	margin-right: 50px;
+
+@media screen and (max-width: 900px) {
+  .row-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }

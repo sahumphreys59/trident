@@ -1,0 +1,35 @@
+.contact .frosty {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section.contact {
+  width: 65vw;
+}
+
+.support-contact {
+  align-self: auto;
+}
+
+
+.contact-image {
+  width: 300px;
+}
+
+.contact-image {
+  justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .section.contact {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section.contact {
+    width: 80vw;
+  }
+}
+
+
+

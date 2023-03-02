@@ -23,3 +23,20 @@
 $(function() {
     $('input.datepicker').data({behaviour: "datepicker"}).datepicker();
 });
+
+function styleCurrentLink() {
+    const navLinks = document.querySelectorAll('.navbar-brand');
+
+    for (let i=0; i<navLinks.length; i++){
+        const link = navLinks[i];
+        console.log(link);
+        if (link.href === window.location.href) {
+            link.classList.add('current-nav-link');
+        }
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    styleCurrentLink();
+});

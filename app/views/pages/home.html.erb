@@ -1,123 +1,80 @@
-<div class="hero">
-	<br/>
-	<br/>
-
-	
-	<div class="frosty col-10 offset-1 text-center">
-		<br/>
-		<br/>
+<div class="home-banner">
+	<div class="frosty">
 		<h1 class="animated fadeInLeft">Smart Solutions. Smart Work. Smart Future.</h1>
-		<br/>
-		<br/>
-			<div class=" animated fadeInRight delay-1s">
+		<div class=" animated fadeInRight delay-1s">
 			<% if @event.present? == true %>
+			<br/>
 			<u><h2>Upcoming Events</h2></u>
 				<h3 style="font-size: 30px;"><%= @event.title %> : <%= @event.start_date.strftime("%B %e, %Y") %> - <%= @event.end_date.strftime("%B %e, %Y") %></h3>
-				<h4 style="font-size: 30px;">Location: <%= @event.location %></h4>
+				<h3 style="font-size: 30px;">Location: <%= @event.location %></h3>
 			<% end %>	
-			</div>	
-			<br/>
-
-		</div>
-		<br/>		
+		</div>	
+	</div>
 </div>
 
-<br/>
+<div class="section">
 
-<div align="center" style="font-size: 25px;">
-	<div class="col-8 exit_explorer">
-		  <a 
-				href="/exit_explorer_utility.pdf" target="=_blank" class="blink">Introducing the new FREE Exit Explorer Utility. Click to learn more
-			</a>
+	<div class="exit_explorer">
+		<h4><a 
+			href="/exit_utility.pdf" target="_blank" class="blink">Introducing the new FREE Exit Explorer Utility. <br/>Click to learn more
+		</a></h4>
 	</div>	
-</div>
 
-<div align="center">
-	
-</div>
-<br/>
-
-<div class="home">
-	<div class="row help">
-		<div class="col-12 col-sm" style="padding: 10px;">
+	<div class="row-content">
+		<div class="flex-item home-item">
 			<u><h3 align="center">Enterprise Software</h3></u>
-			<br/>
 			<p>Save Time, Money, and Maximize Resources.  
 			zOSEM is enabling customers to Reduce and Control ISV Costs, eliminate exit migration issues, and provides an easy to use DFSMShsm optimizer which can dramatically improve HSM performance.</p>
-			<br/>
-			<div align="center">
-			<%= link_to 'Learn More', software_path, class: 'btn btn-primary' %>
-		</div>
+			<a href="/software" class="link-btn">Learn More</a>
 		</div>
 
-		
-		<div class="col-12 col-sm" style="padding: 10px;">
-	   <u><h3 align="center">IT Consulting</h3></u>
-	   <br/>
-	   <p>With an average of over 25 years experience in their individual specialties, let Trident's Senior IT Systems Consultants help you get the most out of each IT dollar you spend. We offer a wide spectrum of services to fit our individual clients needs, check out our services for more information.</p>
-	   <br/>
-	   <div align="center">
-	   <%= link_to 'Learn More', services_path, class: 'btn btn-primary' %>
-	 </div>
-	  </div>
+		<div class="flex-item home-item">
+			<u><h3 align="center">IT Consulting</h3></u>
+			<p>With an average of over 25 years experience in their individual specialties, let Trident Senior IT Systems Consultants help you get the most out of each IT dollar you spend. We offer a wide spectrum of services to fit our individual clients needs, check out our services for more information.</p>
+			<a href="/services" class="link-btn">Learn More</a>
+		</div>
 
-	  <div class="col-12 col-sm" style="padding: 10px;">
+	  <div class="flex-item home-item">
 	    <u><h3 align="center"> Mainframe Managed Services</h3></u>
-	    <br/>
-		<p>Mainframe Managed Services solutions offer a full take over of Operations, Production Support, Scheduling Support, Security Administration as well as other operational roles.This broad solution includes the more traditional roles such as DBA, Performance/Capacity Management, Technical Project Management, Application performance, Batch/Online performance improvements, High Availability, Disaster Recovery, etc.</p>
-		<div align="center">
-		<%= link_to 'Learn More', services_path, class: 'btn btn-primary' %>
-	</div>
-	  </div>
-	</div>
-</div>		
-	
-<br/>
-<br/>
-<hr class="animated zoomIn delay-1s">
-<br/>
-<br/>
 
-	<div class="shape col-10 offset-1">
-		<div class="row help">
-			<div class="col-12 col-sm" style="padding: 10px;">
-				<u><h3 align="center">Contact Support</h3></u>
-			    <br/>
-			    <p>With an average of over 25 years experience in their individual specialties, let Trident's Senior IT Systems Consultants help you get the most out of each IT dollar you spend. We offer a wide spectrum of services to fit our individual clients needs, check out our services for more information.</p>
-			    <div align="center">
-				    <%= link_to 'Get Help', support_path, class: 'btn btn-primary' %>
-				  </div>
-				  <br/>
-				  <br/>
-					<br/>
-					<u><h3 align="center">Valued Partners</h3></u>
-					<br/>
-					<div align="center">
-						<%= link_to 'Visit', partners_path, class: 'btn btn-primary' %>
-					</div>
-				  <br/>
-				<br/>
-				<br/>	
-			</div>
-			
-			<div class="col-12 col-sm" style="padding: 10px;">
-				<u><h3 align="center">In the News</h3></u>
-				<br/>
-				<p><a href="/ibmsystems2019.pdf" target="_blank">Check out Trident's Tim Humphreys in IBM Systems Magazine for a discussion on the Knowledge Gap facing todays Mainframe shops.</a><br /><br />
-				Trident Services proudly announces the availability of zOSEM 6.2, the latest release of zOperating System Environment Manager. 6.2 brings resource routing at the step level, as well as enhancements to many of our already great features, including our HSM Optimizer and HSM Reporting.
-				<br/>
-				<br/>
-				<div align="center" style="font-size: 25px;">
+			<p>Mainframe Managed Services solutions offer a full take over of Operations, Production Support, Scheduling Support, Security Administration as well as other operational roles.This broad solution includes the more traditional roles such as DBA, Performance/Capacity Management, Technical Project Management, Application performance, Batch/Online performance improvements, High Availability, Disaster Recovery, etc.</p>
+			<a href="/services" class="link-btn">Learn More</a>
+		</div>
+	</div>
+
+	<div class="row-content">
+		<div class="flex-item home-item">
+			<u><h3 align="center">Contact Support</h3></u>
+			<p>With an average of over 25 years experience in their individual specialties, let Trident's Senior IT Systems Consultants help you get the most out of each IT dollar you spend. We offer a wide spectrum of services to fit our individual clients needs, check out our services for more information.</p>
+			<a href="/support" class="link-btn">Learn More</a>
+			<u><h3 align="center" style="margin-top: 3rem;">Valued Partners</h3></u>
+			<a href="/partners" class="link-btn">Learn More</a>
+		</div>
+		
+		<div class="flex-item home-item">
+			<u><h3 align="center">In the News</h3></u>
+			<p><a href="/ibmsystems2019.pdf" target="_blank">Check out Trident's Tim Humphreys in IBM Systems Magazine for a discussion on the Knowledge Gap facing todays Mainframe shops.</a><br/><br/>
+			Trident Services proudly announces the availability of zOSEM 6.2, the latest release of zOperating System Environment Manager. 6.2 brings resource routing at the step level, as well as enhancements to many of our already great features, including our HSM Optimizer and HSM Reporting.
+			<br/>
+			<br/>
+			<div>
 				<a href="/62pressrelease.pdf" target="_blank">zOSEM 6.2 Press Release</a>
-				<br/>
+			</div>
+			<div>
 				<a href="/zOSEM_Enhancements_Release_6.2.pdf" target="_blank">zOSEM 6.2 Enhancements Document</a></p>
 			</div>
-		</div>		
+		</div>
 	</div>
+
+</div>
+
+		
 	
 
-<br/>
-<br/>
+
+
+
+
 
 
 

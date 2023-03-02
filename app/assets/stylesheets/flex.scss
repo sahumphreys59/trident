@@ -1,0 +1,29 @@
+.row-content {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+  // display: flex;
+  /* align-self: stretch; */
+}
+
+.flex-item.home-item, .flex-item.support-item, .software .flex-item, .about-content .flex-item, .flex-item.envi, .flex-item.support-contact, .software + .section .flex-item {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+
+@media screen and (max-width: 900px) {
+  .row-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

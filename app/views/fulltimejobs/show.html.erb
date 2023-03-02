@@ -1,30 +1,26 @@
-<br/>
-<br/>
-<div class="boonah-box col-8 offset-2">
-	<%= link_to careers_path do %> 
-    <span class="fa fa-arrow-left fa-2x"></span>
-  <% end %>
-	<div class="row">
-		<div class="col-lg-5 col-sm-12 offset-1" align="center">
-		<h1 style="font-size: 40px;"><u><%= @fulltimejob.title %></h1></u>
-		<div style="font-size: 25px;">Location: <%= @fulltimejob.location %></div>
-	</div>
-	<div class="col-lg-5 col-sm-12 mb-3">
-		<br/>
-		<h4>Details: </h4>
-		<h3><%= @fulltimejob.details %></h3>
-		<br/>
-		<br/>
-		<div align="center">
-			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-		  Apply Here
-			</button>
+<div class="section">
+	<div class="job-details">
+		<%= link_to careers_path do %> 
+			<span class="return-arr" title="return to job listings">&larr;</span>
+		<% end %>
+		<h1><%= @fulltimejob.title %></h1>
+		<div class="row-content">
+			<div class="flex-item">
+				<p>Location:</p> <p><%= @fulltimejob.location %></p>
+			</div>
+			<div class="flex-item">
+				<p>Details:</p>
+				<p><%= @fulltimejob.details %></p>
+				<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  	Apply Here
+				</button> -->
+			</div>
 		</div>
-		<br/>
 	</div>
-</div>	
+</div>
 
-	
+
+		
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">

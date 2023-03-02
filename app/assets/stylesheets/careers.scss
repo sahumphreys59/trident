@@ -1,0 +1,90 @@
+.careers.section {
+  position: relative;
+  width: 70vw;
+}
+
+.careers.section .new-job-action .flex-item {
+  flex: 0;
+}
+
+.careers.section .flex-item {
+ align-self: flex-start;
+}
+
+.careers.section .new-job-action {
+  justify-content: space-between;
+}
+
+.careers .frosty {
+  padding: 3rem;
+  position: relative;
+}
+
+.job-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.job-post {
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.job-details {
+  background-color: hsla(0,0%,0, .5);
+  padding: 3rem;
+  width: 50vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  position: relative;
+}
+
+
+.return-arr {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.job-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #022747;
+  border: 3px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .section.careers {
+    width: 95vw;
+  }
+
+  .section.careers .row-content {
+    width: 80vw;
+  }
+
+  .new-job-action.row-content {
+    flex-direction: row;
+  }
+
+  .job-details  {
+    width: 80vw;
+  }
+
+  .job-details .row-content {
+    flex-direction: row;
+  }
+
+  .job-list.flex-item {
+    width: 80vw;
+  }
+}
